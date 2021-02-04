@@ -8,6 +8,16 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/springcore/autowiring/AutoWiring.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/springcore/autowiring/Employee.java">
+          <value>
+            <set />
+          </value>
+        </entry>
       </map>
     </option>
   </component>
