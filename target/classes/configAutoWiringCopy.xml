@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Address Class contains Primitive type Fields(street, city) so Auto wiring is not possible -->
+    <bean class="com.springcore.autowiring.Address" name="address">
+        <property name="street" value="JV Colony"/>
+        <property name="city" value="Hyderabad"/>
+    </bean>
+
+    <!-- Employee Class contains Object type(Address) so Auto wiring can be done -->
+
+    <bean class="com.springcore.autowiring.Employee" name="empA" autowire="byName"/> <!--This will find the same bean
+   name(address) as reference name of class(private Address address)-->
+
+    <!-- <bean class="com.springcore.autowiring.Employee" name="empA" autowire="byType"/>  It will only find the type of Address
+    class but there will be conflict when there will be two beans of same type-->
+
+    <!--<bean class="com.springcore.autowiring.Employee" name="empA" autowire="constructor"/> Values will be set through
+    constructor not setter method-->
+
+</beans>
