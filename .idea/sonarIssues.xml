@@ -18,6 +18,16 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/springcore/dependencyInjection/DependencyInjection.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/springcore/dependencyInjection/Student.java">
+          <value>
+            <set />
+          </value>
+        </entry>
       </map>
     </option>
   </component>
