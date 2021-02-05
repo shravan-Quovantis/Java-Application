@@ -11,12 +11,12 @@ public class Employee {
     private Address address;
 
 
-    public Employee(Address address) {
+    public Employee(final Address address) {
         System.out.println("Setting Values through Constructor");
         this.address = address;
     }
 
-    public void setAddress(Address address) {
+    public void setAddress(final Address address) {
         System.out.println("Setting values through Setter");
         this.address = address;
     }

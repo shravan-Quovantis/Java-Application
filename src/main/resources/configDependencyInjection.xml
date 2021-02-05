@@ -3,7 +3,7 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
                            http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean class="com.springcore.dependencyInjection.Student" name = "StudentA">
+    <bean class="com.springcore.dependencyinjection.Student" name = "StudentA">
         <property name="id">
             <value>7875</value>
         </property>
@@ -18,7 +18,7 @@
     </bean>
 
     <!--Second Bean using different tag -->
-    <bean class="com.springcore.dependencyInjection.Student" name = "StudentB">
+    <bean class="com.springcore.dependencyinjection.Student" name = "StudentB">
         <property name="id" value="68746"/>
         <property name="name" value="Ravi"/>
         <property name="address" value = "Delhi"/>

@@ -1,4 +1,4 @@
-package com.springcore.dependencyInjection;
+package com.springcore.dependencyinjection;
 
 import lombok.*;
 
