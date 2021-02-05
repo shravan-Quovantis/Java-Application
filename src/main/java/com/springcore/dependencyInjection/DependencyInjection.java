@@ -18,10 +18,10 @@ public class DependencyInjection {
         Student studentB = (Student) context.getBean("StudentB");
         System.out.println(studentB);
 
-//        //Another way
-//        Resource r=new ClassPathResource("configDependencyInjection.xml");
-//        BeanFactory factory= new XmlBeanFactory(r);
-//        Student studentA1=(Student) factory.getBean("StudentA");
-//        System.out.println(studentA1.toString());
+        //Another way
+        Resource r=new ClassPathResource("configDependencyInjection.xml");
+        BeanFactory factory= new XmlBeanFactory(r);
+        Student studentA1=(Student) factory.getBean("StudentA");
+        System.out.println(studentA1.toString());
     }
 }

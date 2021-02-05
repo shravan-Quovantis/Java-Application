@@ -13,13 +13,13 @@
 
     <!-- Employee Class contains Object type(Address) so Auto wiring can be done -->
 
-    <bean class="com.springcore.autowiring.Employee" name="empA" autowire="byName"/> <!--This will find the same bean
-   name(address) as reference name of class(private Address address)-->
+    <!-- This will find the same bean name(address) as reference name of class(private Address address)-->
+<!--     <bean class="com.springcore.autowiring.Employee" name="empA" autowire="byName"/> -->
 
-    <!-- <bean class="com.springcore.autowiring.Employee" name="empA" autowire="byType"/>  It will only find the type of Address
-    class but there will be conflict when there will be two beans of same type-->
+    <!-- It will only find the type of Address class but there will be conflict when there will be two beans of same type-->
+<!--     <bean class="com.springcore.autowiring.Employee" name="empA" autowire="byType"/>  -->
 
-    <!--<bean class="com.springcore.autowiring.Employee" name="empA" autowire="constructor"/> Values will be set through
-    constructor not setter method-->
+    <!-- Values will be set through constructor not setter method-->
+    <bean class="com.springcore.autowiring.Employee" name="empA" autowire="constructor"/>
 
 </beans>
